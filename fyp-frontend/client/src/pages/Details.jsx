@@ -16,6 +16,7 @@ import {
   Paper,
 } from '@mui/material';
 import StructureFeature from '../components/StructureFeature';
+import { getFieldLabel } from '../texts/convert';
 
 const Details = () => {
   const [data, setData] = useState(null);
@@ -77,7 +78,7 @@ const Details = () => {
                   ) {
                     return (
                       <TableRow key={index}>
-                        <TableCell>{key}</TableCell>
+                        <TableCell>{getFieldLabel(key)}</TableCell>
                         <TableCell>{value}</TableCell>
                       </TableRow>
                     );
