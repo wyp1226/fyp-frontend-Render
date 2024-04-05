@@ -27,7 +27,7 @@ const Details = () => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          `https://fyp-backend-yz7h.onrender.com/findOne?${str}`
+          `https://fyp-backend-yz7h.onrender.com:3000/findOne?${str}`
         );
         setData(response.data[0]);
         setIsLoading(false);

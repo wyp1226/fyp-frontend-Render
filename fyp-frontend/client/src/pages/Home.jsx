@@ -11,7 +11,7 @@ const Home = () => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          'https://fyp-backend-yz7h.onrender.com/holdings'
+          'https://fyp-backend-yz7h.onrender.com:3000/holdings'
         );
         setHoldings(response.data);
         setIsLoading(false);
