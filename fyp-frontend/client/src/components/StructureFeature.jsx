@@ -22,7 +22,7 @@ const StructureFeature = ({ data, structure, substring }) => {
           <Table>
             <TableBody>
               {Object.entries(data).map(([key, value], index) => {
-                if (key.includes(`${substring}`)) {
+                if (key.includes(`${substring}`) && key !== 'nPerPage' && key !== 'page') {
                   return (
                     <TableRow key={index}>
                       <TableCell>{getFieldLabel(key)}</TableCell>
