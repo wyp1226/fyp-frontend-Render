@@ -1,6 +1,5 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
         align="center"
         sx={{ backgroundColor: "#E3F2FD", padding: "1rem" }}
       >
-        RNA virus secondary structure database
+        RNA viruses secondary structures database
       </Typography>
       <Navigation />
     </>

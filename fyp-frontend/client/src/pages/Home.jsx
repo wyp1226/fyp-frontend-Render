@@ -28,9 +28,9 @@ const Home = () => {
       <Container>
         <Box sx={{ padding: '1rem' }}>
           <Typography variant="h6">
-            This database contains ground-truth RNA virus secondary structures
+            This database contains ground-truth RNA viruses secondary structures
             of any type and organism. The ultimate goal of this database is to
-            incorporate a comprehensive collection of known RNA virus secondary
+            incorporate a comprehensive collection of known RNA viruses secondary
             structures, and to provide the scientific community with simple ways
             of searching the proposed database.
           </Typography>
@@ -40,7 +40,7 @@ const Home = () => {
         <Typography variant="h6" align="center">
           Current holdings:{' '}
           <Link to="/search_results?nPerPage=10&page=0">{holdings}</Link> RNA
-          virus secondary structures in total.
+          viruses secondary structures in total.
         </Typography>
       ) : (
         <div
@@ -60,7 +60,7 @@ const Home = () => {
       </Typography>
       <Box sx={{ padding: '2rem' }}>
         <Typography variant="h6">
-          Use of the RNA virus secondary structure database is free of charge.
+          Use of the RNA viruses secondary structures database is free of charge.
           Although the authors have made every effort to ensure that the
           database is correctly implemented, and fulfill the function described
           in the documentation, neither the authors nor The Chinese University
