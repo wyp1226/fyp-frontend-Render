@@ -10,6 +10,7 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
+import { getFieldLabel } from "../texts/convert";
 const StructureFeature = ({ data, structure, substring }) => {
   return (
     <Accordion>
@@ -24,7 +25,7 @@ const StructureFeature = ({ data, structure, substring }) => {
                 if (key.includes(`${substring}`)) {
                   return (
                     <TableRow key={index}>
-                      <TableCell>{key}</TableCell>
+                      <TableCell>{getFieldLabel(key)}</TableCell>
                       <TableCell>{value}</TableCell>
                     </TableRow>
                   );
