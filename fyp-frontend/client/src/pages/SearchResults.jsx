@@ -39,7 +39,7 @@ const SearchResults = () => {
         }
         navigate(`/search_results?${str}`);
         const response = await axios.get(
-          `https://fyp-backend-yz7h.onrender.com:3000/filter?${str}`
+          `https://fyp-backend-yz7h.onrender.com:10000/filter?${str}`
         );
         setData(response.data);
       } catch (error) {
@@ -61,7 +61,7 @@ const SearchResults = () => {
           str += key + '=' + value + '&';
         }
         const holdings = await axios.get(
-          `https://fyp-backend-yz7h.onrender.com:3000/filterRowNum?${str}`
+          `https://fyp-backend-yz7h.onrender.com:10000/filterRowNum?${str}`
         );
         setTotalRows(holdings.data);
       } catch (error) {
