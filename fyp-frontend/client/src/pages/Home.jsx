@@ -1,27 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Typography, Container, Box, CircularProgress } from '@mui/material';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Typography, Container, Box } from '@mui/material';
 import Header from '../components/Header.jsx';
 import Navigation from '../components/Navigation.jsx';
 const Home = () => {
-  const [holdings, setHoldings] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const response = await axios.get(
-          'https://fyp-backend-yz7h.onrender.com/holdings'
-        );
-        setHoldings(response.data);
-        setIsLoading(false);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getData();
-  }, []);
-
   return (
     <>
       <Header />
@@ -36,24 +17,11 @@ const Home = () => {
           </Typography>
         </Box>
       </Container>
-      {!isLoading ? (
-        <Typography variant="h6" align="center">
-          Current holdings:{' '}
-          <Link to="/search_results?nPerPage=10&page=0">{holdings}</Link> RNA
-          viruses secondary structures in total.
-        </Typography>
-      ) : (
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '200px',
-          }}
-        >
-          <CircularProgress />
-        </div>
-      )}
+
+      <Typography variant="h6" align="center">
+        Current holdings: 207 RNA viruses secondary structures in total.
+      </Typography>
+
       <hr />
       <Typography align="center" variant="h5">
         Disclaimer
