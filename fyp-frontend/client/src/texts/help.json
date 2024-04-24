@@ -8,7 +8,7 @@
     "meaning": "The secondary structure is contained in which source database."
   },
   {
-    "field": "Source ID",
+    "field": "Source Id",
     "meaning": "This refers to the ID of the molecule in the source database."
   },
   {
@@ -36,75 +36,75 @@
     "meaning": "This refers to the number of bases in a molecule. For complexes with more than one molecule, the sum of the lengths of the molecules is taken."
   },
   {
-    "field": "numOfDomains",
+    "field": "Number of Domains",
     "meaning": "This is the number of branches (or pseudoknotted regions) in the external loop."
   },
   {
-    "field": "numOfExteriorLoops",
+    "field": "Number of Exterior Loops",
     "meaning": "This is the number of exterior loops."
   },
   {
-    "field": "numOfSegments",
+    "field": "Number of Segments",
     "meaning": "This is the number of segments."
   },
   {
-    "field": "numOfPairedBases",
+    "field": "Number of Paired Bases",
     "meaning": "This is the number of paired bases in the molecule. The number of unpaired bases plus the number of paired bases is the length of the molecule."
   },
   {
-    "field": "numOfUnpairedBases",
+    "field": "Number of Unpaired Bases",
     "meaning": "This is the number of unpaired bases in the molecule. The number of unpaired bases plus the number of paired bases is the length of the molecule."
   },
   {
-    "field": "numOfStems",
+    "field": "Number of Stems",
     "meaning": "This is the number of stems in the molecule. A stem (or uninterrupted stem) is a sequence of base pairs, with no interspersed internal or bulge loops. We include not only canonical (Watson-Crick and wobble G-U) base pairs, but also non-canonical base pairs and base pairs involving modified bases, in our stems. (Base pairs involving at least one base which is not A,C,G, or U - i.e. modified bases or bases represented using general characters of the IUPAC code) are reported as \"other base pair\" in the analyzer's output. We also include stems of length one - sometimes called isolated base pairs - in our secondary structure."
   },
   {
-    "field": "numOfHairpinLoops",
+    "field": "Number of Hairpin Loops",
     "meaning": "This is the number of hairpin loops in the molecule. A hairpin loop has one closing base pair. For complexes of two or more interacting molecules, the analyzer may report loops at the \"junctions\" of molecules; thus when analyzing loops, it is advisable to exclude complexes with two or more molecules."
   },
   {
-    "field": "numOfBulges",
+    "field": "Number of Bulges",
     "meaning": "This is the number of bulge loops in the molecule. A bulge loop has two closing base pairs i.j, i'.j', with either i and i' adjacent or j and j' adjacent (but not both). For complexes of two or more interacting molecules, the analyzer may report loops at the \"junctions\" of molecules; thus when analyzing loops, it is advisable to exclude complexes with two or more molecules."
   },
   {
-    "field": "numOfInternalLoops",
+    "field": "Number of Internal Loops",
     "meaning": "This is the number of internal loops in the molecule. An internal loop has two closing base pairs i.j, i'.j', with neither i and i' adjacent or j and j' adjacent, i.e. there are unpaired bases on each side of the loop. For complexes of two or more interacting molecules, the analyzer may report loops at the \"junctions\" of molecules; thus when analyzing loops, it is advisable to exclude complexes with two or more molecules."
   },
   {
-    "field": "numOfMultiLoops",
+    "field": "Number of Multi Loops",
     "meaning": "This is the number of multi-loops in the molecule. A multi-loop has at least three closing base pairs. For complexes of two or more interacting molecules, the analyzer may report loops at the \"junctions\" of molecules; thus when analyzing loops, it is advisable to exclude complexes with two or more molecules."
   },
   {
-    "field": "numOfPseudoknots",
+    "field": "Number of Pseudoknots",
     "meaning": "This is the number of pseudoknots in the molecule. A pseudoknot has base pairs i.j and i'.j' which overlap, i.e. i < i' < j < j'. Since we include stems of length 1 (i.e. isolated base pairs) in our secondary structures, note that a pseudoknot may contain a pseudoknotted stem of length 1, and a pseudoknot may be broken by removing just one base pair. Precise definitions of pseudoknots, bands, and related pseudoknotted structures can be found in: Linear Time Algorithm for Parsing RNA Secondary Structure, (B. Rastegari and A. Condon), 5th Workshop on Algorithms in Bioinformatics (WABI), Oct 2005."
   },
   {
-    "field": "numOfBasePairsInStems",
+    "field": "Number of Base Pairs in Stems",
     "meaning": "The number of base pairs in a stem is determined by the availability of complementary sequences in the RNA molecule. When two complementary sequences are present, they can form base pairs and create a stem structure."
   },
   {
-    "field": "avgStemLength",
+    "field": "Average Stem Length",
     "meaning": "The length of a stem is the number of base pairs in the stem. The average is taken over all stems in the selected molecule or set of molecules."
   },
   {
-    "field": "avgHairpinLength",
+    "field": "Average Hairpin Length",
     "meaning": "The length of a hairpin loop is the number of bases (all unpaired) strictly between the bases in the closing base pair of the hairpin. The average is taken over all hairpins in the selected molecule or set of molecules."
   },
   {
-    "field": "avgBulgeLength",
+    "field": "Average Bulge Length",
     "meaning": "The length of a bulge loop is the number of (unpaired) bases in a bulge loop. The average is taken over all bulges in the selected molecule or set of molecules."
   },
   {
-    "field": "avgInternalLength",
+    "field": "Average Internal Length",
     "meaning": "The length of an internal loop is the number of (unpaired) bases in the internal loop. The average is taken over all internal loops in the selected molecule or set of molecules."
   },
   {
-    "field": "avgMultiLength",
+    "field": "Average Multi Length",
     "meaning": "The length of a multi loop is the number of (unpaired) bases in a multi loop. The average is taken over all multi loops in the selected molecule or set of molecules."
   },
   {
-    "field": "avgBandLength",
+    "field": "Average Band Length",
     "meaning": "The length of a band is the number of base pairs in the band. The average is taken over all bands in the selected molecule or set of molecules."
   }
 ]
